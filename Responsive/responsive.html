@@ -1,0 +1,41 @@
+<html>
+  <head>
+  <meta name="viewport" content="wdith=device-width", initial-scale="1.0" />
+      <title>Responsive Header</title>
+      <link rel="stylesheet" type="text/css" href='responsive.css' />
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+            rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
+            crossorigin="anonymous">
+   </head>
+   <body>
+       <header>
+           <div class="logo">LOGO</div>
+           <nav class="activ">
+               <ul>
+                   <li><a href="#" class="active">HOME</a></li>
+                   <li><a href="#">About</a></li>
+                   <li><a href="#">Services</a></li>
+                   <li><a href="#">Team</a></li>
+                   <li><a href="#">Portfolio</a></li>
+                   <li><a href="#">Contact</a></li>
+               </ul>
+           </nav>
+       <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+       </header>
+       <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+       <script type="text/javascript">
+           $(document).ready(function () {
+               $('.menu-toggle').click(function () {
+                   $('nav').toggleClass('activ')
+               })
+           })
+       </script>
+
+   </body>
+
+
+
+
+
+
+</html>
